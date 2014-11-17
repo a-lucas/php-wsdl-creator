@@ -2,7 +2,7 @@
 
 /*
 PhpWsdl - Generate WSDL from PHP
-Copyright (C) 2011  Andreas Müller-Saala, wan24.de 
+Copyright (C) 2011  Andreas Mï¿½ller-Saala, wan24.de 
 
 This program is free software; you can redistribute it and/or modify it under 
 the terms of the GNU General Public License as published by the Free Software 
@@ -26,7 +26,7 @@ PhpWsdl::RegisterHook('CreateObjectHook','internalenum','PhpWsdlEnum::CreateEnum
 /**
  * This class creates enumerations
  * 
- * @author Andreas Müller-Saala, wan24.de
+ * @author Andreas Mï¿½ller-Saala, wan24.de
  */
 class PhpWsdlEnum extends PhpWsdlObject{
 	/**
@@ -173,7 +173,7 @@ class PhpWsdlEnum extends PhpWsdlObject{
 			$res[]="\t/**";
 			$res[]="\t * @var ".$this->Type;
 			$res[]="\t */";
-			$res[]="\tconst \$".$temp[0]."=\"".addslashes($temp[1])."\";";
+			$res[]="\tconst ".$temp[0]."=\"".addslashes($temp[1])."\";";
 		}
 		$res[]="}";
 	}
